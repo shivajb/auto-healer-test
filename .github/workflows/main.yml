@@ -1,0 +1,9 @@
+name: Test Code
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Tests
+        run: pytest test_app.py
